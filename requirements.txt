@@ -1,0 +1,2 @@
+matplotlib>=3.7
+ruff==0.17.4

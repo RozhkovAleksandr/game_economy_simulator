@@ -1,0 +1,537 @@
+{
+  "summary": [
+    {
+      "economy": "A: улучшение стоит 20",
+      "profile": "saver",
+      "players": 1,
+      "goal_reached_percent": 100,
+      "item_owned_percent": 100.0,
+      "mean_goal_day": 5,
+      "mean_earned": 50,
+      "mean_spent": 50,
+      "mean_end_gold": 0
+    },
+    {
+      "economy": "A: улучшение стоит 20",
+      "profile": "investor",
+      "players": 1,
+      "goal_reached_percent": 100,
+      "item_owned_percent": 100.0,
+      "mean_goal_day": 4,
+      "mean_earned": 95,
+      "mean_spent": 70,
+      "mean_end_gold": 25
+    },
+    {
+      "economy": "B: улучшение стоит 30",
+      "profile": "saver",
+      "players": 1,
+      "goal_reached_percent": 100,
+      "item_owned_percent": 100.0,
+      "mean_goal_day": 5,
+      "mean_earned": 50,
+      "mean_spent": 50,
+      "mean_end_gold": 0
+    },
+    {
+      "economy": "B: улучшение стоит 30",
+      "profile": "investor",
+      "players": 1,
+      "goal_reached_percent": 100,
+      "item_owned_percent": 100.0,
+      "mean_goal_day": 5,
+      "mean_earned": 80,
+      "mean_spent": 80,
+      "mean_end_gold": 0
+    }
+  ],
+  "runs": [
+    {
+      "config": {
+        "name": "A: улучшение стоит 20",
+        "days": 5,
+        "start_gold": 0,
+        "action_reward": 10,
+        "item": {
+          "name": "меч",
+          "price": 50
+        },
+        "upgrade": {
+          "name": "кирка",
+          "price": 20,
+          "reward_after": 25
+        },
+        "goal": {
+          "type": "own_item",
+          "item": "меч",
+          "by_day": 5
+        },
+        "profiles": [
+          "saver",
+          "investor"
+        ],
+        "players_per_profile": 1
+      },
+      "players": [
+        {
+          "profile": "saver",
+          "goal_reached": true,
+          "goal_day": 5,
+          "end_gold": 0,
+          "history": [
+            {
+              "day": 1,
+              "balance_before": 0,
+              "earned": 10,
+              "spent": 0,
+              "balance": 10,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 40
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "balance_before": 10,
+              "earned": 10,
+              "spent": 0,
+              "balance": 20,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 30
+                }
+              ]
+            },
+            {
+              "day": 3,
+              "balance_before": 20,
+              "earned": 10,
+              "spent": 0,
+              "balance": 30,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 20
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "balance_before": 30,
+              "earned": 10,
+              "spent": 0,
+              "balance": 40,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 10
+                }
+              ]
+            },
+            {
+              "day": 5,
+              "balance_before": 40,
+              "earned": 10,
+              "spent": 50,
+              "balance": 0,
+              "upgraded": false,
+              "item_owned": true,
+              "bought_upgrade": false,
+              "bought_item": true,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "item",
+                  "name": "меч",
+                  "price": 50
+                }
+              ]
+            }
+          ],
+          "total_earned": 50,
+          "total_spent": 50,
+          "session": 1
+        },
+        {
+          "profile": "investor",
+          "goal_reached": true,
+          "goal_day": 4,
+          "end_gold": 25,
+          "history": [
+            {
+              "day": 1,
+              "balance_before": 0,
+              "earned": 10,
+              "spent": 0,
+              "balance": 10,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "upgrade",
+                  "name": "кирка",
+                  "missing_gold": 10
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "balance_before": 10,
+              "earned": 10,
+              "spent": 20,
+              "balance": 0,
+              "upgraded": true,
+              "item_owned": false,
+              "bought_upgrade": true,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "upgrade",
+                  "name": "кирка",
+                  "price": 20
+                },
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 50
+                }
+              ]
+            },
+            {
+              "day": 3,
+              "balance_before": 0,
+              "earned": 25,
+              "spent": 0,
+              "balance": 25,
+              "upgraded": true,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 25
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "balance_before": 25,
+              "earned": 25,
+              "spent": 50,
+              "balance": 0,
+              "upgraded": true,
+              "item_owned": true,
+              "bought_upgrade": false,
+              "bought_item": true,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "item",
+                  "name": "меч",
+                  "price": 50
+                }
+              ]
+            },
+            {
+              "day": 5,
+              "balance_before": 0,
+              "earned": 25,
+              "spent": 0,
+              "balance": 25,
+              "upgraded": true,
+              "item_owned": true,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": []
+            }
+          ],
+          "total_earned": 95,
+          "total_spent": 70,
+          "session": 1
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "B: улучшение стоит 30",
+        "days": 5,
+        "start_gold": 0,
+        "action_reward": 10,
+        "item": {
+          "name": "меч",
+          "price": 50
+        },
+        "upgrade": {
+          "name": "кирка",
+          "price": 30,
+          "reward_after": 25
+        },
+        "goal": {
+          "type": "own_item",
+          "item": "меч",
+          "by_day": 5
+        },
+        "profiles": [
+          "saver",
+          "investor"
+        ],
+        "players_per_profile": 1
+      },
+      "players": [
+        {
+          "profile": "saver",
+          "goal_reached": true,
+          "goal_day": 5,
+          "end_gold": 0,
+          "history": [
+            {
+              "day": 1,
+              "balance_before": 0,
+              "earned": 10,
+              "spent": 0,
+              "balance": 10,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 40
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "balance_before": 10,
+              "earned": 10,
+              "spent": 0,
+              "balance": 20,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 30
+                }
+              ]
+            },
+            {
+              "day": 3,
+              "balance_before": 20,
+              "earned": 10,
+              "spent": 0,
+              "balance": 30,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 20
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "balance_before": 30,
+              "earned": 10,
+              "spent": 0,
+              "balance": 40,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 10
+                }
+              ]
+            },
+            {
+              "day": 5,
+              "balance_before": 40,
+              "earned": 10,
+              "spent": 50,
+              "balance": 0,
+              "upgraded": false,
+              "item_owned": true,
+              "bought_upgrade": false,
+              "bought_item": true,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "item",
+                  "name": "меч",
+                  "price": 50
+                }
+              ]
+            }
+          ],
+          "total_earned": 50,
+          "total_spent": 50,
+          "session": 1
+        },
+        {
+          "profile": "investor",
+          "goal_reached": true,
+          "goal_day": 5,
+          "end_gold": 0,
+          "history": [
+            {
+              "day": 1,
+              "balance_before": 0,
+              "earned": 10,
+              "spent": 0,
+              "balance": 10,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "upgrade",
+                  "name": "кирка",
+                  "missing_gold": 20
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "balance_before": 10,
+              "earned": 10,
+              "spent": 0,
+              "balance": 20,
+              "upgraded": false,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "upgrade",
+                  "name": "кирка",
+                  "missing_gold": 10
+                }
+              ]
+            },
+            {
+              "day": 3,
+              "balance_before": 20,
+              "earned": 10,
+              "spent": 30,
+              "balance": 0,
+              "upgraded": true,
+              "item_owned": false,
+              "bought_upgrade": true,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "upgrade",
+                  "name": "кирка",
+                  "price": 30
+                },
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 50
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "balance_before": 0,
+              "earned": 25,
+              "spent": 0,
+              "balance": 25,
+              "upgraded": true,
+              "item_owned": false,
+              "bought_upgrade": false,
+              "bought_item": false,
+              "actions": [
+                {
+                  "type": "wait",
+                  "target": "item",
+                  "name": "меч",
+                  "missing_gold": 25
+                }
+              ]
+            },
+            {
+              "day": 5,
+              "balance_before": 25,
+              "earned": 25,
+              "spent": 50,
+              "balance": 0,
+              "upgraded": true,
+              "item_owned": true,
+              "bought_upgrade": false,
+              "bought_item": true,
+              "actions": [
+                {
+                  "type": "purchase",
+                  "target": "item",
+                  "name": "меч",
+                  "price": 50
+                }
+              ]
+            }
+          ],
+          "total_earned": 80,
+          "total_spent": 80,
+          "session": 1
+        }
+      ]
+    }
+  ]
+}

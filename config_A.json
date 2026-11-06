@@ -1,0 +1,25 @@
+{
+  "name": "A: улучшение стоит 20",
+  "days": 5,
+  "start_gold": 0,
+  "action_reward": 10,
+  "item": {
+    "name": "меч",
+    "price": 50
+  },
+  "upgrade": {
+    "name": "кирка",
+    "price": 20,
+    "reward_after": 25
+  },
+  "goal": {
+    "type": "own_item",
+    "item": "меч",
+    "by_day": 5
+  },
+  "profiles": [
+    "saver",
+    "investor"
+  ],
+  "players_per_profile": 1
+}
